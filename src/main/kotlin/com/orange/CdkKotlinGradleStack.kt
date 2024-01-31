@@ -11,7 +11,7 @@ import software.constructs.Construct
 class CdkKotlinGradleStack @JvmOverloads constructor(parent: Construct?, id: String?, props: StackProps? = null) :
     Stack(parent, id, props) {
     init {
-        val queue = Queue.Builder.create(this, "CdkKotlinGradleStack")
+        val queue = Queue.Builder.create(this, "CdkKotlinGradleStackQueue")
             .visibilityTimeout(Duration.seconds(300))
             .build()
 
